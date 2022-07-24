@@ -1,11 +1,11 @@
 const validMonths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
 const itemsToBuy = [
-  ["Shoe", 50.99],
-  ["Sandals", 24.99],
-  ["Socks", 0.99],
-  ["Pants", 15.89],
-  ["Woolen Scard", 5],
+  ["Dairy Milk", 3.99],
+  ["Sprite", 2.49],
+  ["Dairy Milk Hazelnut in Dark Chololate", 3.49],
+  ["Lindt - Dark Chocolate", 3.89],
+  ["Lindt - White Chocolate", 5.00],
 ];
 
 var userName, userEmail, creditCardNo, total, donation, grandTotal;
