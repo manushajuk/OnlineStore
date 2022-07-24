@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 to 10 Store</title>
+    <link href='styles/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id='mainContainer'>
+        <h1>Glenridge Childrens Hospital Fundraiser</h1>
+        <div id='intro'>
+            <h2>Welcome to the fundraiser for the research on <span>Diabetics in Children</span>.</h2>
+            <h3>Every penny you donate will would save a child from diabetics in future.!!</h3>
+            <h4><span>Please read the below and acknowledge to start the process</span>.</h4>
+            <form action="" method='post' onsubmit="return agreementSubmit();">
+                <fieldset>
+                    <legend>Terms and Condition</legend><br>
+                    <h4>
+                        The money raised thru the fundraise can and will be used only for the benifit of the Diabetic
+                        Study. During the process, the user is required to purchase atlease one item. The <span>donation
+                            would be calculated based on the total amount of the items purchased. Either $10 or 10% of
+                            the total amount, which ever is highter.</span>
+                    </h4><br><br>
+                    <input type='checkbox' id='termsFlag' value='yes'>
+                    <label for="termsFlag">Check here if you agree to the below terms.. </label> <br><br>
+                    <input type='submit'><br><br>
+                </fieldset>
+            </form>
+            <br>
+        </div>
+        <div id='purchase' class='subdiv hide-div'>
+            <h2>Please select the items you would like to buy here</h2>
+            </h3>
+            <form action="" method='post' onsubmit='return validateItems();'>
+                <fieldset>
+                    <legend>Items available to buy</legend>
+                    <table id='itemList'>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        <tr class='receiptFooter'>
+                            <td colspan='3'>Total</td>
+                            <td id='totalPrice'>0</td>
+                        </tr>
+                        <tr class='receiptFooter'>
+                            <td colspan='3'>Donation</td>
+                            <td id='donation'>0</td>
+                        </tr>
+                    </table>
+                    <input type='submit'> <br> <br>
+                </fieldset>
+            </form>
+            <br>
+        </div>
+        <div id='info' class='subdiv hide-div'>
+            <h2>We are almost done, kindly provide the below information for billing.</h2>
+            <form action="" method='post' onsubmit="return verifyUserInfo();" autocomplete="off">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <lable for="userName">Name:</lable><br>
+                                <input type='text' id='userName' name='userName' placeholder='Full Name' required> <br>
+                            </td>
+                            <td>
+                                <label for='userEmail'>Email:</label><br>
+                                <input type='email' id='userEmail' name='userEmail' placeholder='sample@mail.com'
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan='2'>
+                                <label>Card Number:</label>
+                                <input type='text' id='cardNo' name='creditCardNo' placeholder='0000-0000-0000-0000'
+                                    size='17' maxlength="19"><br>
+                                <lable>Expiration Date</lable><br>
+                                <input type='text' id='cardXpM' name='creditCardExMonth' placeholder='MMM' maxlength="3"
+                                    size='2'>
+                                <input type='text' id='cardXpY' name='creditCardExYear' placeholder='YYYY' maxlength="4"
+                                    size='3'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan='2'>
+                                <input type='submit'>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+            <br>
+            <div id='formInputError' class='hide-div'>
+                <h2>Please fix the below errors to continue..</h2>
+                <p id='formErrors'></p>
+            </div>
+        </div>
+
+        <div id='receipt' class='subdiv hide-div'>
+            <h2>Thank you for your contributions, please find your receipt below. </h2>
+            <table id='finalReceipt'>
+                <tr>
+                    <th colspan="2" id='custName'>Name: </th>
+                    <th colspan="2" id='currDate'>Date: </th>
+                </tr>
+                <tr>
+                    <th colspan="2" id='custEmail'>Email: </th>
+                    <th colspan="2" id='custCard'>Card No:</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+            <input type='button' value='Start over 🔁' onclick="reloadPage();">
+        </div>
+        <br>
+    </div>
+    <footer id='footer'>
+        &copy; Manu Shaju &#183; Conestoga College
+    </footer>
+</body>
+<script src='script/app.js'></script>
+<noscript> This browser doesnot support JavaScript.! 😢 Kindly use a different browser.</noscript>
+
+</html>

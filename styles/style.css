@@ -1,0 +1,173 @@
+* {
+  margin: 0; padding:0;
+  line-height: 1;
+}
+
+body {
+  /* padding: 0 5%; */
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #B1D0E0;
+  font-family: 'Calibri';
+}
+
+h2 {
+  font-size: 250%;
+  padding: 5px;
+}
+h3 {
+  font-size: 200%;
+  padding: 5px;
+}
+h4 {
+  font-size: 150%;
+  padding: 5px;
+}
+h5{
+  font-size: 250%;
+  padding: 5px;
+}
+
+span {
+  text-decoration: underline;
+  color: rgb(61, 61, 61)
+}
+
+#mainContainer div
+#formInputError {
+  width: 100%;
+  min-height: auto;
+  margin:0;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#mainContainer div:nth-child(even) {
+  background-color: #406882;
+  color: #B1D0E0;
+}
+
+#mainContainer div:nth-child(odd) {
+  color: #406882;
+  background-color: #B1D0E0;
+}
+/* #mainContainer div:nth-child(even) {
+  background-color: cyan;
+} */
+
+.hide-div {
+  display: none;
+}
+
+form, .formData
+{
+    width: 80%;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px #2c2c2c;
+    padding: 3%;
+    margin: 50px 50px;
+    color: inherit;
+    border-radius: 20px;
+}
+
+label {
+    width: 80%;
+    display: inline-block;
+    font-size: 100%;
+    color: inherit;
+    text-align: left;
+}
+
+legend {
+  text-align: center;
+}
+
+#formInputError {
+  display: none;
+}
+
+h1 {
+  font-family: "Bradley Hand ITC", Courier, monospace;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2%;
+  margin: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 150%;
+  background-color: #406882;
+  color: #B1D0E0
+}
+td {
+  padding: 5px;
+  font-size:120%;
+}
+
+th {
+  
+}
+
+#info input[type='text'] {
+  font-size:120%;
+}
+#info input[type='email'] {
+  font-size:120%;
+}
+input[type='button'],
+input[type='submit'] {
+  margin: 5%;
+  font-size: 200%;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  border-radius: 20%;
+  cursor: pointer;
+  background-color: #406882;
+  color:#B1D0E0;
+  box-shadow: 2px 2px grey;
+  transition-duration: .5s;
+  font-family: 'Forte';
+}
+input[type='button']:hover,
+input[type='submit']:hover {
+  background-color: #6a89cc;
+  color: black;
+}
+
+input[type='submit']:active,
+input[type='button']:active {
+  box-shadow: 0 5px black;
+  transform: translateY(2px) translateX(2px);
+} 
+
+.receipt {
+  border: none;
+}
+
+.itemPrice {
+  text-align: right;
+}
+
+#footer {
+  opacity: 70%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+  
+}
+
+.receiptFooter {
+  font-weight: bolder;
+  font-size: 120%;
+}
